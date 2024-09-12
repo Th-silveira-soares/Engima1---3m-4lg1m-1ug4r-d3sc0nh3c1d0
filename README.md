@@ -5,4 +5,4 @@ Aqui vocês poderam ver todos os site/projetos que nós da organização da ginc
 ### Sintam-se a vontade para vasculhar as entrelinhas e ver como fizemos cada projeto!!!
 ### Pedimos para que nos sigam nas redes sociais:
 -  (https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/sprites/solid/instagram.svg) [Instagram - CAMK](https://www.instagram.com/camkuergs/)
--  ![Instagram](https://unpkg.com/feather-icons@4.28.0/dist/icons/instagram.svg) [Instagram - Thiago Soares](https://www.instagram.com/https_s_silveira/)
+-  ![Instagram](https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/Images/Icons/Socials/Instagram.svg) [Instagram - Thiago Soares](https://www.instagram.com/https_s_silveira/)
