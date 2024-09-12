@@ -3,7 +3,7 @@
 
 <p align="justify">Aqui vocês poderam ver todos os site/projetos que nós da organização da Gincana Acadêmica da Automação, juntos com o Centro Acadêmico Marcos Kan criamos para vocês. Fiquem a vontade para esmiuçar as entrelinhas de cada projeto </p>
 
-<h3 align="left">Pedimos para que nos sigam nas redes sociais:</h3>
+<h3 align="left">Nos sigam nas redes sociais:</h3>
 
 -  [Instagram - CAMK](https://www.instagram.com/camkuergs/)
 -  [Instagram - Thiago Soares](https://www.instagram.com/https_s_silveira/)
