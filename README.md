@@ -1,4 +1,4 @@
-<h1 text-align="center">Gincana Acadêmica da Automação - 2024</h1>
+<h1 align="center">Gincana Acadêmica da Automação - 2024</h1>
 Sejam bem vindos caros alunos do bacharelado de Engenharia de Controle e Automação UERGS
 Aqui vocês poderam ver todos os site/projetos que nós da organização da gincana juntos com o Centro Acadêmico Marcos Kan criamos para vocês
 
