@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #000000;
+    background-image: radial-gradient(#005022, #001012), url("https://i.giphy.com/media/oEI9uBYSzLpBK/giphy.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #28ad22bf;
+    font-family: 'Inconsolata';
+    letter-spacing: 2.5px;
+    font-size: 24px;
+    text-shadow: 0 0 10px #28ad22bf, 0 0 2px #ffffffbf;
+}
+
+.noise-bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url("https://i.giphy.com/media/oEI9uBYSzLpBK/giphy.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.05;
+    pointer-events: none;
+}
+
+.overlay-bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: repeating-linear-gradient(180deg, #00000000 0%, #00000080 50%, #00000000 100%);
+    background-size: auto 4px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.overlay-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(0deg, transparent 0%, #22da2840 2%, #22da28bf 3%, #22da2840 3%, transparent 100%);
+    background-repeat: no-repeat;
+    animation: scanEffectAnim 5s linear infinite;
+}
+
+@keyframes scanEffectAnim {
+    0% {
+        background-position: 0 -100vh;
+    }
+
+    25%, 100% {
+        background-position: 0 100vh;
+    }
+}
+
+.terminal-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50vh;
+    width: 75%;
+    text-transform: uppercase;
+}
+
+.error-code {
+    text-decoration: none;
+    color: #ffffff;
+    letter-spacing: 5px;
+}
+
+.page-link {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Inconsolata', sans-serif;
+    font-size: 1rem;
+    font-weight: 800;
+    color: #fff;
+    border: #196C16 3px solid;
+    caret-color: #28ad22bf;
+    background: none;
+    height: 30px;
+    width: 30%;
+    box-shadow: 0 0 10px #28ad22bf, 0 0 2px #ffffffbf;
+    
+}
+
+.page-link::placeholder {
+    color: #fff;
+}
+
+.page-link:focus {
+    outline: none;
+}
+
+.page-link:focus::placeholder{
+    color: transparent;
+}
+
+.terminal-text {
+    color: #28ad22;
+    text-shadow: 0 0 1px #28ad22bf, 0 0 2px #ffffffbf;
+    margin: 5% 0;
+}
+
+.enigma {
+    color: #1d5f17b4;
+    font-size: 0.9rem;
+    position: absolute;
+    top: 3%;
+    left: 83%;
+}
+
+.resultado {
+    color: #1d5f17b4;
+    font-size: 2rem;
+    position: absolute;
+    top: 85%;
+    left: 63%;
+    display: none;
+}
+
+.resultado1 {
+    color: #1d5f17b4;
+    font-size: 1.3rem;
+    position: absolute;
+    top: 90%;
+    left: 59%;
+    display: none;
+}
+
+input[type="range"]{
+    -webkit-appearance: none;
+    background: transparent;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 4px;
+    background: #28ad22bf;
+    border: none;
+    margin-bottom: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 10px;
+    height: 15px;
+    background: #0dff00bf;
+    cursor: pointer;
+    border-radius: 20%;
+    box-shadow: 0 0 5px #00ff00;
+    margin-top: -5px;
+}
+
+input[type="range"]:focus {
+    outline: none;
+}
+
+::selection {
+    background-color: #0dff00bf;
+    color: white;
+}

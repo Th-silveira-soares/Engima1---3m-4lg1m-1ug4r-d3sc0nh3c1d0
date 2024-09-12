@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Terminal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="media/favicon.png" type="image/x-icon">
+</head>
+<body>
+
+    <audio id="som" loop> 
+        <source src="media/sound.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="noise-bg"></div>
+    <div class="overlay-bg"></div>
+    <div class="terminal-container">
+        <h1>gincana acadêmica da automação<span class="error-code"> 404</span></h1>
+        <p class="terminal-text">
+            &gt; Então você nos achou... hahaha será que consegue desvendar o que lhe propusemos?
+        </p>
+        <p class="terminal-text">
+            &gt; Insira aqui a sigla:
+            <input type="text" placeholder="Qual a sigla?" class="page-link" id="input-sigla">
+        </p>
+        <p class="terminal-text">&gt; Boa sorte... [dica:cifra d/*****(+8)]</p>
+
+        <label for="volume">Volume:</label>
+        <input type="range" id="volume" min="0" max="1" step="0.1" value="0.1">
+    </div>
+
+    <p class="enigma" id="enigma">xxxxxxxx-xxx-xx-xx-xx</p>
+    <p class="resultado">OQVKIVI MKI KIUS</p>
+    <p class="resultado1">https://encurtador.com.br/ANPU1</p>
+
+    <script>
+        var audio = document.getElementById('som');
+        var volumeControl = document.getElementById('volume');
+        var inputSigla = document.getElementById('input-sigla');
+        var enigma = document.getElementById('enigma');
+        var resultado = document.querySelector('.resultado');
+        var resultado1 = document.querySelector('.resultado1');
+
+        audio.volume = volumeControl.value;
+
+        // Reproduz o som ao clicar na página
+        document.body.addEventListener('click', function() {
+            audio.play();
+        });
+
+        // Ajusta o volume conforme o controle deslizante
+        volumeControl.addEventListener('input', function() {
+            audio.volume = this.value;
+            console.log("Volume ajustado para: " + this.value);
+        });
+
+        // Verifica a sigla inserida e atualiza o texto
+        inputSigla.addEventListener('input', function() {
+            var valorSigla = inputSigla.value.trim().toUpperCase(); // Ignora espaços e transforma em maiúsculas
+
+            if (valorSigla === 'U') {
+                enigma.textContent = 'Pxxxxxxx-xxx-0x-xx-x4';
+                resultado.style.display = 'none';
+                resultado1.style.display = 'none';
+            } else if (valorSigla === 'UE') {
+                enigma.textContent = "Pxlxxxxa-xxa-07-xx-x4";
+                resultado.style.display = 'none';
+                resultado1.style.display = 'none';
+            } else if (valorSigla === 'UER') {
+                enigma.textContent = "Pxlxxxra-dxa-07-xx-24";
+                resultado.style.display = 'none';
+                resultado1.style.display = 'none';
+            } else if (valorSigla === 'UERG') {
+                enigma.textContent = "Pxlextra-dxa-07-1x-24";
+                resultado.style.display = 'none';
+                resultado1.style.display = 'none';
+            } else if (valorSigla === "UERGS") {
+                enigma.textContent = 'Palestra-dia-07-11-24';
+                resultado.style.display = 'block';
+                resultado1.style.display = 'block';
+            } else {
+                enigma.textContent = 'xxxxxxxx-xxx-xx-xx-xx';
+                resultado.style.display = 'none';
+                resultado1.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
