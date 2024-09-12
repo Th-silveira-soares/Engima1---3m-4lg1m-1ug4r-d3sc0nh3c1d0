@@ -4,5 +4,5 @@ Aqui vocês poderam ver todos os site/projetos que nós da organização da ginc
 
 ### Sintam-se a vontade para vasculhar as entrelinhas e ver como fizemos cada projeto!!!
 ### Pedimos para que nos sigam nas redes sociais:
--  [![Instagram](https://img.shields.io/badge/Instagram-000000?style=for-the-badge&logo=instagram&logoColor=white)] [Instagram - CAMK](https://www.instagram.com/camkuergs/)
+-  ![Instagram](https://img.shields.io/badge/Instagram-000000?style=flat-square&logo=instagram&logoColor=white) [Instagram - CAMK](https://www.instagram.com/camkuergs/)
 -  [Instagram - Thiago Soares](https://www.instagram.com/https_s_silveira/)
